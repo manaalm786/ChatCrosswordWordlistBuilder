@@ -3,8 +3,8 @@ import nltk
 import re
 import argparse
 
-parser = argparse.ArgumentParser(description='Perform letter, word and n-tuple frequency analysis on text files.')
-parser.add_argument('--filename', '-f', dest='inputFile', required=True, help='Text file to parse.')
+parser = argparse.ArgumentParser(description='Creates crossword wordlist (scored all words at 60) from Discord chat history JSON export.')
+parser.add_argument('--filename', '-f', dest='inputFile', required=True, help='JSON file to use.')
 args = parser.parse_args()
 
 
